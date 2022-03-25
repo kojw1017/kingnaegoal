@@ -1,10 +1,15 @@
- 
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="TEST">
-	<select id="selectTest" resultType="HashMap">
-		SELECT 1;
+
+<!-- Mapper.class에 매소드명이 id 파라미터 타입은 풀패키지명 또는 properties에 설정으로.. -->
+
+	<select id="SELECT01" parameterType="hashmap" resultType="hashmap">
+	
+	select 1;
+	
 	</select>
+
+
 </mapper>
