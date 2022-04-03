@@ -18,8 +18,8 @@ public class HelloController {
 	// return "안녕 씨발아 산내골 게시판에 온걸 환영해~ 현재 시간은 " + new Date(0) + "\n";
 	// }
 
-	// @GetMapping("/")
-	// public List<TestDto> test() {
-	// return testService.getAllDataList();
-	// }
+	@GetMapping("/")
+	public List<TestDto> test() {
+	return testService.getAllDataList();
+	}
 }
