@@ -5,7 +5,8 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 **/applicattion.properties
-
+settings.gradle
+/settings.gradle
 ### STS ###
 .apt_generated
 .classpath
