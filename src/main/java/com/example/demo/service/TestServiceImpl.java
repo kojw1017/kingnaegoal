@@ -11,6 +11,8 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class TestServiceImpl implements TestService {
+    // private final TestMapper testMapper;
+
     private final TestMapper testMapper;
 
     @Override

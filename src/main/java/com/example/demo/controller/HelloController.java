@@ -1,11 +1,13 @@
 package com.example.demo.controller;
 
-import java.sql.Date;
 import java.util.List;
+
 import com.example.demo.dto.TestDto;
 import com.example.demo.service.TestService;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -20,6 +22,6 @@ public class HelloController {
 
 	@GetMapping("/")
 	public List<TestDto> test() {
-	return testService.getAllDataList();
+		return testService.getAllDataList();
 	}
 }
