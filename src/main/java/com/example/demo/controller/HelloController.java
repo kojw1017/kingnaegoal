@@ -1,27 +1,18 @@
 package com.example.demo.controller;
 
+import java.util.Arrays;
 import java.util.List;
-
-import com.example.demo.dto.TestDto;
 import com.example.demo.service.TestService;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
 public class HelloController {
-	private TestService testService;
 
-	// @GetMapping("/")
-	// public String main() {
-	// return "안녕 씨발아 산내골 게시판에 온걸 환영해~ 현재 시간은 " + new Date(0) + "\n";
-	// }
-
-	// @GetMapping("/")
-	// public List<TestDto> test() {
-	// 	return testService.getAllDataList();
-	// }
+	@GetMapping("/hello")
+	public List<String> hello() {
+		return Arrays.asList("안녕하세요1", "Hello");
+	}
 }
