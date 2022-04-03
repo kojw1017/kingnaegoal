@@ -3,6 +3,6 @@
 
 <mapper namespace="com.example.demo.mapper.TestMapper">
   <select id="getAllDataList" resultType="com.example.demo.dto.TestDto">
-    SELECT title FROM notice;
+    SELECT 1;
   </select>
 </mapper>

@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class HelloController {
-	private final TestService testService;
+	private TestService testService;
 
 	// @GetMapping("/")
 	// public String main() {
